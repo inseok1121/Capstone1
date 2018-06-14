@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="#0097a7"
+                android:elevation="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:paddingLeft="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="Result"
+                        android:gravity="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="23sp"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/list_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="3dp"
+                android:paddingTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/menu4_result"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_gravity="center" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#0097a7"
+                    android:text="Save"
+                    android:theme="@style/PrimaryButton" />
+
+                <Button
+                    android:id="@+id/shareBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#0097a7"
+                    android:text="Share"
+                    android:theme="@style/PrimaryButton" />
+
+                <Button
+                    android:id="@+id/modelingBtn"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:backgroundTint="#0097a7"
+                    android:text="3D"
+                    android:theme="@style/PrimaryButton" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
